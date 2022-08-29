@@ -1,7 +1,136 @@
-.header {
-    color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    box-sizing:border-box;
+}
+
+b {
+    font-weight: 700    ;
 }
 
 body {
-    background-color: blue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.page1Container {
+    display: flex;
+    min-height:100vh;
+    background: #062F4F;
+}
+
+.page2Container {
+    display: flex;
+    min-height:100vh;
+    background: darkgray;
+}
+
+.navContainer {
+    background: black;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+.navMain {
+    min-width: 6vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+a {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: white;
+    font-weight:600;
+
+}
+
+#Home {
+    margin: 50px;
+    animation: about 3s ease-in-out;
+}
+
+.mainText {
+    min-height: 100vh;
+    min-width: 93vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    font-size: 5em;
+    justify-content: center;
+    align-items: center;
+    border: 50px solid black;
+    border-left-color: white;
+}
+
+#mainText1 {
+    margin: 0;
+    /*margin-left: 10px;*/
+}
+
+#mainText2 {
+    display: flex;
+    /*margin-left: 110px;*/
+}
+
+#mainText2-1 {
+    margin: 0;
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+#mainText2-2 {
+    margin: 0;
+    font-size: 1em;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+#mainText3 {
+    margin: 0;
+    /*margin-left: 210px;*/
+}
+
+
+
+@keyframes about {
+    0%,
+    15% {
+        opacity: 0;
+        transform: translate(-100px, -100px);
+    }
+    40%,
+    75% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    80%,
+    90% {
+        transform: rotate(20deg);
+    }
+    85%,
+    95% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
