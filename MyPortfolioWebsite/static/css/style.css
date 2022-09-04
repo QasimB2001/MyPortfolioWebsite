@@ -9,16 +9,27 @@ b {
     font-weight: 700    ;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Saira Semi Condensed', sans-serif;
+    background-image: url("../imgs/stock_img1.jpg");
+    background-color: gray;
+    height: 100vh;
+    max-width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .page1Container {
     display: flex;
     min-height:100vh;
-    background: #062F4F;
+    /*background: #062F4F;*/
+    justify-content: center;
 }
 
 .page2Container {
@@ -28,10 +39,10 @@ body {
 }
 
 .navContainer {
-    background: black;
+    /*background: black;*/
     height: 100%;
     text-align: center;
-    display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
     min-height:100vh;
@@ -40,8 +51,10 @@ body {
 .navMain {
     min-width: 6vw;
     display: flex;
+    position: relative;
     flex-direction: column;
-    
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 a {
@@ -51,20 +64,13 @@ a {
     font-size: 1.5em;
     color: white;
     font-weight:600;
-
-}
-
-#Home {
-    margin: 50px;
-    animation: about 3s ease-in-out;
 }
 
 .mainText {
-    min-height: 100vh;
-    min-width: 93vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .introTextContainer {
@@ -75,13 +81,14 @@ a {
     font-size: 5em;
     justify-content: center;
     align-items: center;
-    border: 50px solid black;
-    border-left-color: white;
 }
 
 #mainText1 {
     margin: 0;
-    /*margin-left: 10px;*/
+    /*margin-left: 10px;#Home {
+    margin: 50px;
+    animation: about 3s ease-in-out;
+}*/
 }
 
 #mainText2 {
@@ -105,12 +112,7 @@ a {
 
 #mainText3 {
     margin: 0;
-    /*margin-left: 210px;*/
-}
-
-
-
-@keyframes about {
+    /*margin-left: 210px;*@keyframes about {
     0%,
     15% {
         opacity: 0;
@@ -133,4 +135,5 @@ a {
     100% {
         transform: rotate(0deg);
     }
+}/
 }
